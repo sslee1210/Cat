@@ -1,4 +1,4 @@
-export default [
+const catData = [
   {
     id: 1,
     name: "고양이 1",
@@ -30,3 +30,4 @@ export default [
     image: "/images/cat5.jpg",
   },
 ];
+export default catData;
