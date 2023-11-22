@@ -29,18 +29,15 @@ const Friends = () => {
   };
 
   const handleAddCat = () => {
-    // Create a new cat object
     const newCat = {
-      id: cats.length + 1, // You should use a more robust way to generate IDs
+      id: cats.length + 1,
       name: newCatName,
       age: newCatAge,
       image: newCatImage,
     };
 
-    // Update the state to include the new cat
     setCats([...cats, newCat]);
 
-    // Clear the input fields
     setNewCatName("");
     setNewCatAge("");
     setNewCatImage("");
@@ -56,7 +53,7 @@ const Friends = () => {
             checked={additionalInactive}
             onChange={handleAdditionalInactiveChange}
           />
-          추가비활성
+          추가
         </label>
       </div>
       <ul>
