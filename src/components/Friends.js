@@ -63,7 +63,8 @@ const Friends = () => {
         {cats.map((cat) => (
           <li
             key={cat.id}
-            className={`cat ${additionalInactive ? "inactive" : ""}`}>
+            className={`cat ${additionalInactive ? "inactive" : ""}`}
+          >
             <img src={cat.image} alt={cat.name} />
             <div className="main">
               <p className="name">이름: {cat.name}</p>
